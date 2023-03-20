@@ -1,0 +1,126 @@
+@charset "utf-8";
+body{
+  background: #333;
+}
+.btn_play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -104px 0 0 -90px;
+  width: 180px;
+  height: 180px;
+  font-size: 0;
+  z-index: 2;
+}
+.btn_play button {
+  position: absolute;
+  top: 31px;
+  left: 39px;
+  width: 102px;
+  height: 119px;
+  z-index: 1;
+}
+
+.btn_play::after,
+.btn_play::before {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  animation-fill-mode: both;
+  content:"";
+}
+
+.btn_play::after {
+  background-image: url(https://sgimage.netmarble.com/mobile/game/enn/brand/v7/img/0f0bc6a.png);
+  animation: btnPlay-data-v-42852380 1s step-start 1;
+}
+
+.btn_play::before {
+  background-image: url(https://sgimage.netmarble.com/mobile/game/enn/brand/v7/img/f8405eb.png);
+  animation: show-data-v-42852380 .01s, btnPlayBefore-data-v-42852380 1.2s step-start infinite;
+  animation-delay: 1s;
+}
+
+/* .btn_play .btn_play_after {
+  overflow: hidden;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 180px;
+  background-image: url(https://sgimage.netmarble.com/mobile/game/enn/brand/v7/img/0f0bc6a.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  animation: btnPlay-data-v-42852380 1s step-start 1;
+  animation-fill-mode: both;
+} */
+
+/* .btn_play .btn_play_before {
+  overflow: hidden;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 180px;
+  background-image: url(https://sgimage.netmarble.com/mobile/game/enn/brand/v7/img/f8405eb.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  animation: show-data-v-42852380 .01s, btnPlayBefore-data-v-42852380 1.2s step-start infinite;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+} */
+
+@keyframes show-data-v-42852380 { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes btnPlay-data-v-42852380 {
+  /* 0% { background-position-x: -180px; } */
+  7.69231% { background-position-x: 0; }
+  15.3846% { background-position-x: -180px; }
+  23.0769% { background-position-x: -360px; }
+  30.7692% { background-position-x: -540px; }
+  38.4615% { background-position-x: -720px; }
+  46.1538% { background-position-x: -900px; }
+  53.8462% { background-position-x: -1080px; }
+  61.5385% { background-position-x: -1260px; }
+  69.2308% { background-position-x: -1440px; }
+  76.9231% { background-position-x: -1620px; }
+  84.6154% { background-position-x: -1800px; }
+  92.3077% { background-position-x: -1980px; }
+  100% { background-position-x: -2160px; }
+}
+
+@keyframes btnPlayBefore-data-v-42852380 {
+  /* 0% { background-position-x: -180px; } */
+  4.54545% { background-position-x: 0; }
+  9.09091% { background-position-x: -180px; }
+  13.6364% { background-position-x: -360px; }
+  18.1818% { background-position-x: -540px; }
+  22.7273% { background-position-x: -720px; }
+  27.2727% { background-position-x: -900px; }
+  31.8182% { background-position-x: -1080px; }
+  36.3636% { background-position-x: -1260px; }
+  40.9091% { background-position-x: -1440px; }
+  45.4545% { background-position-x: -1620px; }
+  50% { background-position-x: -1800px; }
+  54.5455% { background-position-x: -1980px; }
+  59.0909% { background-position-x: -2160px; }
+  63.6364% { background-position-x: -2340px; }
+  68.1818% { background-position-x: -2520px; }
+  72.7273% { background-position-x: -2700px; }
+  77.2727% { background-position-x: -2880px; }
+  81.8182% { background-position-x: -3060px; }
+  86.3636% { background-position-x: -3240px; }
+  90.9091% { background-position-x: -3420px; }
+  95.4545% { background-position-x: -3600px; }
+  100% { background-position-x: -3780px; }
+}
