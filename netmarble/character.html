@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Nnetmarble 제2의나라</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/character.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="main">
+      <div class="character_contents">
+        <div class="character brown_hair"><span class="blind">가상세계 캐릭터 갈색머리</span></div>
+        <div class="character gold_hair"><span class="blind">가상세계 캐릭터 금색머리</span></div>
+      </div>
+      <div class="character_bg color"><span class="blind">캐릭터 배경</span></div>
+      <div class="character_bg layer"><span class="blind">캐릭터 레이어</span></div>
+    </div>
+    <div class="btn_area">
+      <button type="button" class="btn">
+        <span class="btn_img"><img src="images/ico_btn.png" alt="버튼"></span>
+        <span class="btn_desc virtual">가상 세계 보기</span>
+        <span class="btn_desc real">현실 세계 보기</span>
+      </button>
+    </div>
+  </div>
+  <script>
+    $('.btn').click(function() {
+      $('.character.brown_hair').css({"background-image": "url(./images/img_character_04.png)"});
+      $('.character.gold_hair').css({"background-image": "url(./images/img_character_01.png)"});
+      $('.character_bg.color').css({"background-image": "url(./images/img_bg_03.jpg)"});
+      $('.character_bg.layer').css({"background-image": "url(./images/img_bg_04.png)"});
+    });
+  </script>
+</body>
+</html>
