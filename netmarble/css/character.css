@@ -3,7 +3,7 @@
 .wrap {
   overflow: hidden;
   position: relative;
-  min-height: 100%;
+  height: 100%;
 }
 
 .main {
@@ -39,9 +39,8 @@
   width: 1975px;
   height: 2533px;
   z-index: 2;
-  animation: move-character 14s reverse;
-  transition-delay: .5s,.5s,.5s,0s;
-  animation-iteration-count: infinite;
+  animation: move-character 14s reverse infinite;;
+  transition-delay: .5s;
 }
 
 .character.front {
@@ -50,9 +49,8 @@
   width: 1059px;
   height: 1598px;
   z-index: 4;
-  animation: move-character 8s linear;
-  transition-delay: .3s,.3s,.3s,0s;
-  animation-iteration-count: infinite;
+  animation: move-character 8s linear infinite;;
+  transition-delay: .3s;
 }
 
 .character.back.virtual {
@@ -80,7 +78,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  transition-delay: .5s,.5s,.5s,0s;
+  transition-delay: .5s;
 }
 
 .character_bg.color.virtual {
@@ -97,12 +95,10 @@
 .character_bg.color.real {
   background-image: url(../images/img_bg_03.jpg);
   animation: move-character-bg 80s linear;
-  z-index: 1;
 }
 
 .character_bg.layer.real {
   background-image: url(../images/img_bg_04.png);
-  z-index: 3;
 }
 
 .btn_area {
@@ -142,7 +138,7 @@
   font-size: 18px;
   text-align: center;
   color: #fff;
-  white-space: realrap;
+  white-space: nowrap;
   letter-spacing: -12px;
   z-index: -1;
   transition: all 0.5s;
