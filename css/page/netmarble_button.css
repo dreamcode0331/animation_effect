@@ -46,37 +46,6 @@ body{
   animation-delay: 1s;
 }
 
-/* .btn_play .btn_play_after {
-  overflow: hidden;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 180px;
-  height: 180px;
-  background-image: url(https://sgimage.netmarble.com/mobile/game/enn/brand/v7/img/0f0bc6a.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  animation: btnPlay-data-v-42852380 1s step-start 1;
-  animation-fill-mode: both;
-} */
-
-/* .btn_play .btn_play_before {
-  overflow: hidden;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 180px;
-  height: 180px;
-  background-image: url(https://sgimage.netmarble.com/mobile/game/enn/brand/v7/img/f8405eb.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  animation: show-data-v-42852380 .01s, btnPlayBefore-data-v-42852380 1.2s step-start infinite;
-  animation-delay: 1s;
-  animation-fill-mode: both;
-} */
-
 @keyframes show-data-v-42852380 { 
   0% { opacity: 0; }
   100% { opacity: 1; }

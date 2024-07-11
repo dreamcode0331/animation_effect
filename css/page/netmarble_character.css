@@ -54,19 +54,19 @@
 }
 
 .character.back.virtual {
-  background-image: url(../images/img_character_02.png);
+  background-image: url(../../img/netmarble/img_character_02.png);
 }
 
 .character.front.virtual {
-  background-image: url(../images/img_character_03.png);
+  background-image: url(../../img/netmarble/img_character_03.png);
 }
 
 .character.back.real {
-  background-image: url(../images/img_character_04.png);
+  background-image: url(../../img/netmarble/img_character_04.png);
 }
 
 .character.front.real {
-  background-image: url(../images/img_character_01.png);
+  background-image: url(../../img/netmarble/img_character_01.png);
 }
 
 .character_bg {
@@ -82,23 +82,23 @@
 }
 
 .character_bg.color.virtual {
-  background-image: url(../images/img_bg_01.jpg);
+  background-image: url(../../img/netmarble/img_bg_01.jpg);
   animation: move-character-bg 80s linear;
   z-index: 1;
 }
 
 .character_bg.layer.virtual {
-  background-image: url(../images/img_bg_02.png);
+  background-image: url(../../img/netmarble/img_bg_02.png);
   z-index: 3;
 }
 
 .character_bg.color.real {
-  background-image: url(../images/img_bg_03.jpg);
+  background-image: url(../../img/netmarble/img_bg_03.jpg);
   animation: move-character-bg 80s linear;
 }
 
 .character_bg.layer.real {
-  background-image: url(../images/img_bg_04.png);
+  background-image: url(../../img/netmarble/img_bg_04.png);
 }
 
 .btn_area {
